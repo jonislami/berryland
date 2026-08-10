@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title.straw">Frozen Strawberries — berryland</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="product.straw.long" content="" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='58' r='30' fill='%23e4203b'/%3E%3Cpath d='M50 30c-6-14 6-22 6-22s2 14-6 22z' fill='%233e8b45'/%3E%3C/svg%3E" />
+</head>
+<body class="subpage">
+  {{> header }}
+
+  <main class="pdp" style="--c:#e4203b;--c2:#ff5b6e">
+    <section class="pdp__hero">
+      <div class="pdp__media" data-reveal>
+        <div class="pdp__blob" aria-hidden="true"></div>
+        <img src="/assets/strawberries.png" alt="berryland Frozen Strawberries pack" />
+      </div>
+      <div class="pdp__info">
+        <a href="/products.html" class="pdp__back" data-nav="products"><i data-lucide="arrow-left"></i> <span data-i18n="pd.back">All products</span></a>
+        <span class="card__tag pdp__tag" data-i18n="products.tag">Organicly Grown</span>
+        <h1 class="h-xl pdp__name" data-i18n="product.straw.name">Frozen Strawberries</h1>
+        <p class="pdp__tagline" data-i18n="product.straw.tagline">Sun-ripened &amp; sweet</p>
+        <p class="lead" data-i18n="product.straw.long">Our strawberries…</p>
+        <div class="pdp__cta">
+          <a href="/contact.html" class="btn btn--berry" data-i18n="pd.cta">Order or enquire</a>
+          <a href="/products.html" class="btn btn--ghost" data-i18n="pd.back">All products</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pdp__detail">
+      <div class="pdp__cols">
+        <div data-reveal>
+          <p class="eyebrow" data-i18n="pd.taste">Taste profile</p>
+          <p class="pdp__taste" data-i18n="product.straw.taste">Sweet and juicy…</p>
+
+          <p class="eyebrow" style="margin-top:2rem" data-i18n="pd.perfectfor">Perfect for</p>
+          <div class="uses uses--compact">
+            <div class="use"><span class="use__icon"><i data-lucide="cup-soda"></i></span><h3 data-i18n="use.smoothies">Smoothies</h3><p data-i18n="use.smoothies.d"></p></div>
+            <div class="use"><span class="use__icon"><i data-lucide="cake-slice"></i></span><h3 data-i18n="use.baking">Baking</h3><p data-i18n="use.baking.d"></p></div>
+            <div class="use"><span class="use__icon"><i data-lucide="snowflake"></i></span><h3 data-i18n="use.snacking">Snacking</h3><p data-i18n="use.snacking.d"></p></div>
+            <div class="use"><span class="use__icon"><i data-lucide="wheat"></i></span><h3 data-i18n="use.breakfast">Breakfast bowls</h3><p data-i18n="use.breakfast.d"></p></div>
+          </div>
+        </div>
+
+        <aside class="spec" data-reveal>
+          <h2 class="spec__title" data-i18n="pd.details">Product details</h2>
+          <dl>
+            <div class="spec__row"><dt data-i18n="pd.spec.net">Net weight</dt><dd data-i18n="pd.spec.netv">454g · 16 oz (1 LB)</dd></div>
+            <div class="spec__row"><dt data-i18n="pd.spec.storage">Storage</dt><dd data-i18n="pd.spec.storagev">Keep frozen at −18°C</dd></div>
+            <div class="spec__row"><dt data-i18n="pd.spec.origin">Origin</dt><dd data-i18n="pd.spec.originv">Prelez i Muhaxherve, Kosovo</dd></div>
+            <div class="spec__row"><dt data-i18n="pd.spec.cert">Certification</dt><dd data-i18n="pd.spec.certv">Certified organic</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section others">
+      <div class="section__head">
+        <h2 class="h-lg" data-reveal data-i18n="pd.others">More from berryland</h2>
+      </div>
+      <div class="cards cards--mini">
+        <a class="card" href="/products/blueberries.html" data-reveal style="--c:#1b2a6b;--c2:#3a56c9">
+          <div class="card__img"><img src="/assets/blueberries.png" alt="berryland Frozen Blueberries pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.blue.name">Frozen Blueberries</h3>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+        <a class="card" href="/products/raspberries.html" data-reveal style="--c:#e5316a;--c2:#ff6f9c">
+          <div class="card__img"><img src="/assets/raspberries.png" alt="berryland Frozen Raspberries pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.rasp.name">Frozen Raspberries</h3>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+        <a class="card" href="/products/berry-mix.html" data-reveal style="--c:#4a2a5a;--c2:#8a4fa0">
+          <div class="card__img"><img src="/assets/berry-mix.png" alt="berryland Frozen Berry-Mix pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.mix.name">Frozen Berry-Mix</h3>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  {{> footer }}
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

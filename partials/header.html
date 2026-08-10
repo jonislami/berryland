@@ -1,0 +1,35 @@
+<!-- ornamental grain + cursor -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <a href="/index.html" class="brand" aria-label="berryland home">
+    <img class="brand__logo" src="/assets/logoberryland.svg" alt="berryland" width="172" height="38" />
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="/products.html" data-nav="products" data-i18n="nav.products">Products</a>
+    <a href="/about.html" data-nav="about" data-i18n="nav.about">About</a>
+    <a href="/contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="header__actions">
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en" class="lang__btn is-active" type="button">EN</button>
+      <span class="lang__sep">/</span>
+      <button data-lang="sq" class="lang__btn" type="button">SQ</button>
+    </div>
+    <a href="/contact.html" class="btn btn--sm btn--ink" data-i18n="nav.cta">Get in touch</a>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="/products.html" data-nav="products" data-i18n="nav.products">Products</a>
+  <a href="/about.html" data-nav="about" data-i18n="nav.about">About</a>
+  <a href="/contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+</div>

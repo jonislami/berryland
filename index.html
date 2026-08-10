@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">berryland — Organic Frozen Berries, Raised by Sunlight</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.desc" content="" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='58' r='30' fill='%23e4203b'/%3E%3Cpath d='M50 30c-6-14 6-22 6-22s2 14-6 22z' fill='%233e8b45'/%3E%3C/svg%3E" />
+</head>
+<body>
+  {{> header }}
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="kicker hero__kicker">
+          <span class="kicker__no">01</span>
+          <span class="kicker__rule"></span>
+          <span data-i18n="hero.eyebrow">Organicly grown in Kosovo</span>
+        </div>
+        <h1 class="hero__title">
+          <span class="line"><span data-i18n="hero.title1">Berries,</span></span>
+          <span class="line"><span data-i18n="hero.title2">raised by</span></span>
+          <span class="line line--accent"><span data-i18n="hero.title3">sunlight.</span></span>
+        </h1>
+        <p class="hero__lead" data-i18n="hero.lead">Organic frozen strawberries, blueberries, raspberries and berry-mix — hand-picked at peak ripeness and frozen fresh to lock in the goodness.</p>
+        <div class="hero__cta">
+          <a href="/products.html" class="btn btn--berry" data-i18n="hero.cta1">Explore products</a>
+          <a href="/about.html" class="btn btn--link" data-i18n="hero.cta2">Our story</a>
+        </div>
+        <ul class="hero__meta">
+          <li><b>04</b><span data-i18n="hero.m1">Berry varieties</span></li>
+          <li><b>100%</b><span data-i18n="hero.m2">Certified organic</span></li>
+          <li><b>−18°</b><span data-i18n="hero.m3">Frozen fresh</span></li>
+        </ul>
+      </div>
+
+      <figure class="hero__photo" data-parallax="0.10">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto"
+               poster="/assets/farm-picking.jpg"
+               aria-label="berryland berries, raised by sunlight">
+          <source src="/assets/hero.mp4" type="video/mp4" />
+          <img src="/assets/farm-picking.jpg" alt="Hands picking ripe strawberries in a berryland field" />
+        </video>
+        <figcaption class="hero__cap"><span data-i18n="hero.cap">Peak-season harvest · Kosovo</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee.1">Organicly Grown</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.2">Good Source of Fiber</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.3">Great for Smoothies</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.4">Keep Frozen</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.5">Raised by Sunlight</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.1">Organicly Grown</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.2">Good Source of Fiber</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.3">Great for Smoothies</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.4">Keep Frozen</span><i data-lucide="sparkle" class="marquee__spark"></i>
+        <span data-i18n="marquee.5">Raised by Sunlight</span><i data-lucide="sparkle" class="marquee__spark"></i>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story section" id="story">
+      <div class="story__grid">
+        <div class="story__media" data-reveal>
+          <div class="story__img">
+            <img src="/assets/berry-mix-fruit.jpg" alt="Fresh berryland mixed berries" loading="lazy" />
+          </div>
+          <div class="story__leaf" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><path d="M60 6C60 6 20 30 20 66a40 40 0 0 0 80 0C100 30 60 6 60 6Z" fill="#5cb85c"/><path d="M60 20v76M60 40l18-14M60 60l20-10M60 78l16-8" stroke="#2d6b34" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+
+        <div class="story__body">
+          <p class="eyebrow" data-reveal data-i18n="story.eyebrow">Our story</p>
+          <h2 class="h-lg" data-reveal data-i18n="story.title">From our fields in Kosovo to your freezer</h2>
+          <p class="lead" data-reveal data-i18n="story.p1">berryland began with a simple belief…</p>
+          <p data-reveal data-i18n="story.p2">We farm without shortcuts…</p>
+
+          <div class="stats" data-reveal>
+            <div class="stat"><span class="stat__num" data-count="100" data-suffix="%" data-i18n="story.stat1n">100%</span><span class="stat__label" data-i18n="story.stat1l">Certified organic</span></div>
+            <div class="stat"><span class="stat__num" data-count="4" data-i18n="story.stat2n">4</span><span class="stat__label" data-i18n="story.stat2l">Berry varieties</span></div>
+            <div class="stat"><span class="stat__num" data-i18n="story.stat3n">−18°C</span><span class="stat__label" data-i18n="story.stat3l">Frozen fresh</span></div>
+            <div class="stat"><span class="stat__num" data-count="0" data-i18n="story.stat4n">0</span><span class="stat__label" data-i18n="story.stat4l">Additives, ever</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTS ============ -->
+    <section class="products section" id="products">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="products.eyebrow">The harvest</p>
+        <h2 class="h-lg" data-reveal data-i18n="products.title">Four ways to enjoy the season</h2>
+        <p class="lead center" data-reveal data-i18n="products.lead">Each pack is a single pound of organic berries…</p>
+      </div>
+
+      <div class="cards">
+        <a class="card" href="/products/strawberries.html" data-reveal style="--c:#e4203b;--c2:#ff5b6e">
+          <span class="card__tag" data-i18n="products.tag">Organicly Grown</span>
+          <div class="card__img"><img src="/assets/strawberries.png" alt="berryland Frozen Strawberries pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.straw.name">Frozen Strawberries</h3>
+          <p class="card__desc" data-i18n="product.straw.desc">Sun-ripened and sweet…</p>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+
+        <a class="card" href="/products/blueberries.html" data-reveal style="--c:#1b2a6b;--c2:#3a56c9">
+          <span class="card__tag" data-i18n="products.tag">Organicly Grown</span>
+          <div class="card__img"><img src="/assets/blueberries.png" alt="berryland Frozen Blueberries pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.blue.name">Frozen Blueberries</h3>
+          <p class="card__desc" data-i18n="product.blue.desc">Plump, deep-blue…</p>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+
+        <a class="card" href="/products/raspberries.html" data-reveal style="--c:#e5316a;--c2:#ff6f9c">
+          <span class="card__tag" data-i18n="products.tag">Organicly Grown</span>
+          <div class="card__img"><img src="/assets/raspberries.png" alt="berryland Frozen Raspberries pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.rasp.name">Frozen Raspberries</h3>
+          <p class="card__desc" data-i18n="product.rasp.desc">Delicately tart…</p>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+
+        <a class="card" href="/products/berry-mix.html" data-reveal style="--c:#4a2a5a;--c2:#8a4fa0">
+          <span class="card__tag" data-i18n="products.tag">Organicly Grown</span>
+          <div class="card__img"><img src="/assets/berry-mix.png" alt="berryland Frozen Berry-Mix pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.mix.name">Frozen Berry-Mix</h3>
+          <p class="card__desc" data-i18n="product.mix.desc">All four in one…</p>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+        <a class="card" href="/products/mushrooms.html" data-reveal style="--c:#8a5a3c;--c2:#b07d52">
+          <span class="card__tag" data-i18n="products.tag">Organicly Grown</span>
+          <div class="card__img"><img src="/assets/mushrooms.svg" alt="berryland Frozen Mushrooms pack" loading="lazy"/></div>
+          <h3 class="card__name" data-i18n="product.mush.name">Frozen Mushrooms</h3>
+          <p class="card__desc" data-i18n="product.mush.desc">Clean, meaty and versatile…</p>
+          <span class="card__cue" data-i18n="products.view">View product</span>
+        </a>
+      </div>
+      <div class="center" style="margin-top: 2.5rem;">
+        <a href="/products.html" class="btn btn--ink" data-reveal data-i18n="products.all">See all products</a>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process section" id="process">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="process.eyebrow">How we do it</p>
+        <h2 class="h-lg" data-reveal data-i18n="process.title">From farm to freezer, in a single day</h2>
+      </div>
+
+      <div class="steps">
+        <div class="steps__line" aria-hidden="true"><span class="steps__progress"></span></div>
+        <div class="step" data-reveal>
+          <span class="step__num">01</span>
+          <span class="step__icon" aria-hidden="true"><i data-lucide="sprout"></i></span>
+          <h3 class="step__title" data-i18n="process.s1t">Grown</h3>
+          <p class="step__desc" data-i18n="process.s1d">Organic plants raised in Kosovo…</p>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step__num">02</span>
+          <span class="step__icon" aria-hidden="true"><i data-lucide="shopping-basket"></i></span>
+          <h3 class="step__title" data-i18n="process.s2t">Harvested</h3>
+          <p class="step__desc" data-i18n="process.s2d">Picked by hand at peak ripeness…</p>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step__num">03</span>
+          <span class="step__icon" aria-hidden="true"><i data-lucide="snowflake"></i></span>
+          <h3 class="step__title" data-i18n="process.s3t">Frozen</h3>
+          <p class="step__desc" data-i18n="process.s3d">Flash-frozen within hours…</p>
+        </div>
+        <div class="step" data-reveal>
+          <span class="step__num">04</span>
+          <span class="step__icon" aria-hidden="true"><i data-lucide="truck"></i></span>
+          <h3 class="step__title" data-i18n="process.s4t">Delivered</h3>
+          <p class="step__desc" data-i18n="process.s4d">Sealed, kept frozen and shipped…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUES ============ -->
+    <section class="values section" id="values">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="values.eyebrow">Why berryland</p>
+        <h2 class="h-lg" data-reveal data-i18n="values.title">Goodness you can taste</h2>
+      </div>
+      <div class="values__grid">
+        <div class="value" data-reveal>
+          <span class="value__icon" aria-hidden="true"><i data-lucide="leaf"></i></span>
+          <h3 data-i18n="values.v1t">Certified organic</h3>
+          <p data-i18n="values.v1d">Grown without synthetic pesticides…</p>
+        </div>
+        <div class="value" data-reveal>
+          <span class="value__icon" aria-hidden="true"><i data-lucide="wheat"></i></span>
+          <h3 data-i18n="values.v2t">Good source of fiber</h3>
+          <p data-i18n="values.v2d">Naturally nutritious…</p>
+        </div>
+        <div class="value" data-reveal>
+          <span class="value__icon" aria-hidden="true"><i data-lucide="cup-soda"></i></span>
+          <h3 data-i18n="values.v3t">Great for smoothies</h3>
+          <p data-i18n="values.v3d">Ready to blend straight from the freezer…</p>
+        </div>
+        <div class="value" data-reveal>
+          <span class="value__icon" aria-hidden="true"><i data-lucide="snowflake"></i></span>
+          <h3 data-i18n="values.v4t">Frozen fresh</h3>
+          <p data-i18n="values.v4d">Flash-frozen at the peak of ripeness…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner" data-parallax-bg>
+      <div class="cta-banner__inner">
+        <h2 class="h-xl" data-reveal data-i18n="cta.title">Bring the sunshine home</h2>
+        <p class="lead" data-reveal data-i18n="cta.lead">Stock your freezer, your café or your shop…</p>
+        <a href="#contact" class="btn btn--berry btn--lg" data-reveal data-i18n="cta.btn">Talk to us</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow" data-reveal data-i18n="contact.eyebrow">Get in touch</p>
+          <h2 class="h-lg" data-reveal data-i18n="contact.title">Let’s talk berries</h2>
+          <p class="lead" data-reveal data-i18n="contact.lead">Wholesale, retail or a simple hello…</p>
+
+          <div class="contact__block" data-reveal>
+            <span class="contact__label" data-i18n="contact.addrlabel">Visit us</span>
+            <address class="contact__addr" data-i18n="contact.addr">berryland LTD.
+Prelez i Muhaxherve, Kosovo</address>
+          </div>
+
+          <div class="contact__block" data-reveal>
+            <span class="contact__label" data-i18n="contact.sociallabel">Follow along</span>
+            <div class="socials">
+              <a href="https://www.instagram.com/berrylandbio/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="social-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+              <a href="https://www.facebook.com/profile.php?id=100057282436995" target="_blank" rel="noopener" aria-label="Facebook"><svg class="social-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21.5v-8h2.7l.4-3.1h-3.1V8.4c0-.9.25-1.5 1.55-1.5h1.65V4.1c-.3-.04-1.3-.13-2.46-.13-2.44 0-4.1 1.49-4.1 4.22v2.35H7.4v3.1h2.74v8z"/></svg><span>Facebook</span></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" data-reveal novalidate>
+          <label class="field">
+            <span class="field__label" data-i18n="contact.f_name">Your name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span class="field__label" data-i18n="contact.f_email">Email address</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="field">
+            <span class="field__label" data-i18n="contact.f_msg">How can we help?</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--berry btn--block" data-i18n="contact.f_send">Send message</button>
+          <p class="form-note" id="formNote" hidden data-i18n="contact.f_sent">Thank you — we’ll be in touch!</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  {{> footer }}
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
