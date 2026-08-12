@@ -12,7 +12,11 @@ export default defineConfig({
       partialDirectory: resolve(root, 'partials'),
     }),
   ],
-  server: { port: 5173, open: false },
+  server: {
+    port: process.env.PORT ? Number(process.env.PORT) : 5173,
+    strictPort: false,
+    open: false,
+  },
   build: {
     outDir: 'dist',
     assetsInlineLimit: 4096,

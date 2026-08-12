@@ -169,6 +169,9 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .hero__kicker { margin-bottom: 1.6rem; }
 .hero__kicker .kicker__no { font-weight: 700; }
 .hero__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(3.2rem, 9vw, 7.5rem); line-height: .9; letter-spacing: -0.035em; color: var(--ink); }
+/* longer languages: scale the hero headline down so it doesn't overflow */
+html[lang="sq"] .hero__title,
+html[lang="de"] .hero__title { font-size: clamp(2.4rem, 6.4vw, 5.4rem); }
 .hero__title .line { display: block; overflow: hidden; }
 .hero__title .line > span { display: block; }
 .hero__title .line--accent > span { color: var(--berry); font-style: italic; font-weight: 500; }

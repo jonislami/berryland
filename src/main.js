@@ -33,7 +33,11 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
    i18n
    ============================================================ */
 const STORAGE_KEY = 'berryland-lang';
-let lang = localStorage.getItem(STORAGE_KEY) || (navigator.language?.startsWith('sq') ? 'sq' : 'en');
+function detectLang() {
+  const nav = (navigator.language || 'en').slice(0, 2);
+  return ['en', 'sq', 'de'].includes(nav) ? nav : 'en';
+}
+let lang = localStorage.getItem(STORAGE_KEY) || detectLang();
 
 function applyLang(next) {
   lang = next;
