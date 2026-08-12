@@ -281,6 +281,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .contact__block { display: grid; gap: .45rem; margin-top: .8rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
 .contact__label { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
 .contact__addr { font-style: normal; font-size: 1.1rem; white-space: pre-line; line-height: 1.5; }
+.contact__owner { font-size: 1.1rem; line-height: 1.4; }
+.contact__owner strong { font-weight: 700; }
+.contact__role { color: var(--ink-soft); font-size: .92rem; }
+.contact__link { font-size: 1.1rem; font-weight: 600; width: max-content; box-shadow: inset 0 -1.5px 0 var(--line); transition: color .25s, box-shadow .25s; }
+.contact__link:hover { color: var(--berry); box-shadow: inset 0 -1.5px 0 var(--berry); }
+.footer__contact { display: grid; gap: .35rem; }
+.footer__contact a { color: rgba(255,255,255,.82); font-size: .92rem; width: max-content; }
+.footer__contact a:hover { color: #fff; }
 .socials { display: flex; gap: .8rem; flex-wrap: wrap; }
 .socials a { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; font-size: .82rem; letter-spacing: .04em; padding: .5rem .9rem; border-radius: 2px; box-shadow: inset 0 0 0 1px var(--line-ink); transition: color .25s, background .25s, transform .25s; }
 .socials a:hover { color: var(--paper); background: var(--ink); transform: translateY(-2px); }

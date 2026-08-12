@@ -14,13 +14,14 @@ import {
   Leaf, Wheat, CupSoda, Sun, Sparkle,
   CakeSlice, ArrowLeft,
   CookingPot, Flame, Pizza, Egg,
+  ClipboardCheck,
 } from 'lucide';
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Render all [data-lucide] placeholders as inline SVG icons
 createIcons({
-  icons: { Sprout, ShoppingBasket, Snowflake, Truck, Leaf, Wheat, CupSoda, Sun, Sparkle, CakeSlice, ArrowLeft, CookingPot, Flame, Pizza, Egg },
+  icons: { Sprout, ShoppingBasket, Snowflake, Truck, Leaf, Wheat, CupSoda, Sun, Sparkle, CakeSlice, ArrowLeft, CookingPot, Flame, Pizza, Egg, ClipboardCheck },
   attrs: { 'stroke-width': 1.6, class: 'lucide' },
 });
 
