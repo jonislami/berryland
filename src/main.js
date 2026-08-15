@@ -270,18 +270,51 @@ if (window.matchMedia('(hover: hover)').matches && !prefersReduced) {
 }
 
 /* ============================================================
-   Contact form (front-end only demo)
+   Contact form → Web3Forms (static-friendly email delivery)
+   Get a free access key at https://web3forms.com using berrylandbio@gmail.com,
+   then paste it below. Submissions are emailed straight to that inbox.
    ============================================================ */
+const WEB3FORMS_ACCESS_KEY = 'cef588be-5d01-44dc-a1b4-249a4e12e663';
 const form = $('#contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  const note = $('#formNote');
+  const btn = form.querySelector('button[type="submit"]');
+  const dict = () => translations[lang] || translations.en;
+  const showNote = (key, isError) => {
+    note.textContent = dict()[key] || translations.en[key] || '';
+    note.classList.toggle('is-error', !!isError);
+    note.hidden = false;
+    if (!prefersReduced) gsap.fromTo(note, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 });
+  };
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!form.checkValidity()) { form.reportValidity(); return; }
-    const note = $('#formNote');
-    note.hidden = false;
-    form.querySelector('button[type="submit"]').disabled = true;
-    if (!prefersReduced) gsap.fromTo(note, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 });
-    form.reset();
+
+    btn.disabled = true;
+    const data = new FormData(form);
+    data.append('access_key', WEB3FORMS_ACCESS_KEY);
+    data.append('subject', 'New enquiry from berryland.bio');
+    data.append('from_name', 'berryland.bio website');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: data,
+      });
+      const json = await res.json();
+      if (json.success) {
+        showNote('contact.f_sent', false);
+        form.reset();
+      } else {
+        showNote('contact.f_err', true);
+        btn.disabled = false;
+      }
+    } catch {
+      showNote('contact.f_err', true);
+      btn.disabled = false;
+    }
   });
 }
 

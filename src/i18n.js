@@ -106,6 +106,7 @@ export const translations = {
     'contact.f_msg': 'How can we help?',
     'contact.f_send': 'Send message',
     'contact.f_sent': 'Thank you — we’ll be in touch!',
+    'contact.f_err': 'Something went wrong — please email us directly at berrylandbio@gmail.com.',
 
     'footer.tagline': 'Organic berries & mushrooms, frozen fresh.',
     'footer.rights': 'All rights reserved.',
@@ -312,6 +313,7 @@ export const translations = {
     'contact.f_msg': 'Si mund t’ju ndihmojmë?',
     'contact.f_send': 'Dërgo mesazhin',
     'contact.f_sent': 'Faleminderit — do t’ju kontaktojmë!',
+    'contact.f_err': 'Diçka shkoi keq — ju lutemi na shkruani direkt në berrylandbio@gmail.com.',
 
     'footer.tagline': 'Fruta mali & kërpudha organike, të ngrira të freskëta.',
     'footer.rights': 'Të gjitha të drejtat e rezervuara.',
@@ -519,6 +521,7 @@ export const translations = {
     'contact.f_msg': 'Wie können wir helfen?',
     'contact.f_send': 'Nachricht senden',
     'contact.f_sent': 'Danke — wir melden uns!',
+    'contact.f_err': 'Etwas ist schiefgelaufen — bitte schreiben Sie uns direkt an berrylandbio@gmail.com.',
 
     'footer.tagline': 'Bio-Beeren & -Pilze, frisch gefroren.',
     'footer.rights': 'Alle Rechte vorbehalten.',
