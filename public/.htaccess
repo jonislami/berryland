@@ -1,0 +1,31 @@
+# berryland — clean URLs (serve /about instead of /about.html)
+Options -Indexes
+DirectorySlash Off
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1) Redirect any direct .html request to its clean URL (301)
+  RewriteCond %{THE_REQUEST} \s/+([^.]+?)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # 2) The products listing shares a name with the /products/ folder — map it explicitly
+  RewriteRule ^products/?$ products.html [L]
+
+  # 3) Clean URL -> matching .html file, when one exists
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
+
+# Long-cache fingerprinted build assets; keep HTML fresh
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType image/svg+xml "access plus 1 week"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

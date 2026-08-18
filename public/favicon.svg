@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="berryland">
+  <defs><clipPath id="c"><circle cx="50" cy="50" r="50"/></clipPath></defs>
+  <g clip-path="url(#c)">
+    <rect width="100" height="100" fill="#8fccea"/>
+    <rect y="50" width="100" height="50" fill="#49a64b"/>
+    <rect y="47.4" width="100" height="2.8" fill="#fff"/>
+    <circle cx="30" cy="30" r="15" fill="#fff"/>
+    <g stroke="#fff" stroke-width="3.4" stroke-linecap="butt">
+      <line x1="50" y1="50" x2="3"  y2="68"/>
+      <line x1="50" y1="50" x2="15" y2="87"/>
+      <line x1="50" y1="50" x2="33" y2="98"/>
+      <line x1="50" y1="50" x2="50" y2="101"/>
+      <line x1="50" y1="50" x2="67" y2="98"/>
+      <line x1="50" y1="50" x2="85" y2="87"/>
+      <line x1="50" y1="50" x2="97" y2="68"/>
+    </g>
+  </g>
+</svg>
